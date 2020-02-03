@@ -1,0 +1,4 @@
+{
+	"baseUrl": "https://staging-aol.ao-qa.com/",
+	"testFiles": "**/*.spec.js"
+}
