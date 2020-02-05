@@ -1,5 +1,3 @@
-const fetch = require('node-fetch');
-
 Cypress.on('uncaught:exception', (err, runnable) => {
 	return false;
 });

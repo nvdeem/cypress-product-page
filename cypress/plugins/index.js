@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 module.exports = async (on, config) => {
-	const stagingProductPageUrls = await new Promise((res, rej) => {
+	const stagingUrls = await new Promise((res, rej) => {
 		fetch(
 			'http://catalogueservice.products-staging.ao.com/api/v1/GetListerPage',
 			{
@@ -35,7 +35,7 @@ module.exports = async (on, config) => {
 
 	return Object.assign({}, config, {
 		env: {
-			stagingProductPageUrls
+			stagingUrls
 		}
 	});
 };
